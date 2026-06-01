@@ -4,7 +4,9 @@ from phon_progress import PhonologyEngine
 
 
 class MorphologyEngine:
-  def __init__(self, data_path="data"):
+  def __init__(self, data_path=None):
+    if data_path is None:
+      data_path = os.path.join(os.path.dirname(__file__), "data")
     self.data_path = data_path
 
     # 1. 加载音位与特征 (phon_inventory.json)

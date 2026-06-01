@@ -4,7 +4,7 @@
 # ============================================================
 
 [deepseek]
-api_key = "YOUR_DEEPSEEK_API_KEY_HERE"
+api_key = "sk-470fbbc1e0bd4f18abcb1f18455b21be"
 base_url = "https://api.deepseek.com/v1"
 model = "deepseek-chat"
 

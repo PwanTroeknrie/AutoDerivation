@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AutoDerivation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <script type="module" src="{{ url_for('static', filename='app.js') }}"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="mast">
+        <div>
+          <p class="eyebrow">AutoDerivation</p>
+          <h1>词根生成与形态合法性检测</h1>
+        </div>
+        <div class="mark" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Generator workspace">
+        <form class="panel controls" id="generate-form">
+          <div class="field">
+            <label for="pos">词性</label>
+            <select id="pos" name="pos">
+              <option value="">混合</option>
+              <option value="noun">名词</option>
+              <option value="verb">动词</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="count">数量</label>
+            <input id="count" name="count" type="number" min="1" max="64" value="12" />
+          </div>
+          <button type="submit">生成</button>
+        </form>
+
+        <form class="panel validator" id="validate-form">
+          <div class="field word-field">
+            <label for="word">检测词根</label>
+            <input id="word" name="word" autocomplete="off" placeholder="例如 kapi" />
+          </div>
+          <div class="field">
+            <label for="validate-pos">词性</label>
+            <select id="validate-pos" name="validate-pos">
+              <option value="noun">名词</option>
+              <option value="verb">动词</option>
+            </select>
+          </div>
+          <button type="submit">检测</button>
+        </form>
+
+        <section class="panel result-pane" aria-live="polite">
+          <div class="pane-head">
+            <h2>生成结果</h2>
+            <span id="status">Ready</span>
+          </div>
+          <div class="grid" id="roots"></div>
+        </section>
+
+        <section class="panel inspect-pane">
+          <div class="pane-head">
+            <h2>检测分析</h2>
+            <span>Validator</span>
+          </div>
+          <div id="inspection" class="inspection empty">输入词根后查看合法性、变格/变位类型和样例屈折。</div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
