@@ -1,0 +1,35 @@
+# ============================================================
+# AutoDerivation 配置文件
+# 敏感信息请在此填写，切勿提交到版本控制
+# ============================================================
+
+[deepseek]
+api_key = "YOUR_DEEPSEEK_API_KEY_HERE"
+base_url = "https://api.deepseek.com/v1"
+model = "deepseek-chat"
+
+[ollama]
+base_url = "http://localhost:11434/api/chat"
+model = "sorc/qwen3.5-instruct-uncensored:2b"
+timeout = 120
+
+[paths]
+# 本地 sentence-transformers 模型路径
+model_path = "C:\\Users\\panjo\\.cache\\chroma\\onnx_models\\paraphrase-multilingual-MiniLM-L12-v2\\onnx"
+# 翻译对缓存文件路径
+cache_path = "D:\\Code\\ExpCodes\\AutoDerivation\\cache.json"
+# ChromaDB 向量库持久化路径
+db_path = "./conlang_db"
+
+[database]
+collection_name = "lexicon"
+
+[thresholds]
+# 混合召回: 直接判定为 EXISTED 的分数阈值
+existed = 90
+# 混合召回: 判定为 GENERATE 的分数上限
+generate = 30
+
+[ai]
+# "cloud" (DeepSeek) 或 "local" (Ollama)
+mode = "local"

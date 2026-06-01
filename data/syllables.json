@@ -1,0 +1,58 @@
+[
+    {
+        "class": "noun",
+        "skeletal": "CVC",
+        "frequency": 1
+    },
+      {
+        "class": "noun",
+        "skeletal": "CCVC",
+        "frequency": 1
+    },
+        {
+        "class": "noun",
+        "skeletal": "CVCC",
+        "frequency": 1
+    },
+          {
+        "class": "noun",
+        "skeletal": "CCyCV",
+        "frequency": 1
+    },
+            {
+        "class": "noun",
+        "skeletal": "CVCVC",
+        "frequency": 1
+    },
+  {
+        "class": "noun",
+        "skeletal": "CVCCV",
+        "frequency": 1
+    },
+
+    {
+        "class": "verb",
+        "skeletal": "CPVC",
+        "frequency": 1
+    },
+    {
+        "class": "verb",
+        "skeletal": "CVCi",
+        "frequency": 1
+    },
+    {
+        "class": "verb",
+        "skeletal": "CVCu",
+        "frequency": 1
+    },
+    {
+        "class": "verb",
+        "skeletal": "CPVCq",
+        "frequency": 1
+    },
+    {
+        "class": "verb",
+        "skeletal": "CPVCt",
+        "frequency": 1
+    }
+]

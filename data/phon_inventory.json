@@ -1,0 +1,157 @@
+[
+    {
+        "name": "p",
+        "label": ["consonant", "stop", "labial", "voiceless"],
+        "frequency": 5
+    },
+    {
+        "name": "pʰ",
+        "label": ["consonant", "stop", "labial", "aspirated"],
+        "frequency": 3
+    },
+    {
+        "name": "pˀ",
+        "label": ["consonant", "stop", "labial", "ejective"],
+        "frequency": 3
+    },
+    {
+        "name": "f",
+        "label": ["consonant", "fricative", "labial"],
+        "frequency": 0
+    },
+    {
+        "name": "t",
+        "label": ["consonant", "stop", "alveolar", "voiceless"],
+        "frequency": 5
+    },
+    {
+        "name": "tʰ",
+        "label": ["consonant", "stop", "alveolar", "aspirated"],
+        "frequency": 3
+    },
+    {
+        "name": "s",
+        "label": ["consonant", "fricative", "alveolar"],
+        "frequency": 5
+    },
+    {
+        "name": "tˀ",
+        "label": ["consonant", "stop", "alveolar", "ejective"],
+        "frequency": 3
+    },
+    {
+        "name": "k",
+        "label": ["consonant", "stop", "velar", "voiceless"],
+        "frequency": 5
+    },
+    {
+        "name": "kʰ",
+        "label": ["consonant", "stop", "velar", "aspirated"],
+        "frequency": 3
+    },
+    {
+        "name": "kˀ",
+        "label": ["consonant", "stop", "velar", "ejective"],
+        "frequency": 3
+    },
+    {
+        "name": "x",
+        "label": ["consonant", "fricative", "velar"],
+        "frequency": 0
+    },
+    {
+        "name": "q",
+        "label": ["consonant", "stop", "uvular", "dorsal", "voiceless"],
+        "frequency": 5
+    },
+    {
+        "name": "qʰ",
+        "label": ["consonant", "stop", "uvular", "dorsal", "aspirated"],
+        "frequency": 3
+    },
+    {
+        "name": "qˀ",
+        "label": ["consonant", "stop", "uvular", "dorsal", "ejective"],
+        "frequency": 3
+    },
+    {
+        "name": "m",
+        "label": ["consonant", "sonorant", "nasal", "labial"],
+        "frequency": 4
+    },
+    {
+        "name": "n",
+        "label": ["consonant", "sonorant", "nasal", "alveolar"],
+        "frequency": 4
+    },
+    {
+        "name": "ŋ",
+        "label": ["consonant", "sonorant", "nasal", "uvular", "dorsal"],
+        "frequency": 3
+    },
+    {
+        "name": "l",
+        "label": ["consonant", "sonorant", "lateral", "alveolar", "liquid"],
+        "frequency": 5
+    },
+    {
+        "name": "ɹ",
+        "label": ["consonant", "sonorant", "flap", "alveolar", "liquid"],
+        "frequency": 5
+    },
+    {
+        "name": "r",
+        "label": ["consonant", "sonorant", "trill", "alveolar", "liquid"],
+        "frequency": 0
+    },
+    {
+        "name": "w",
+        "label": ["consonant", "sonorant", "semivowel", "labial", "velar"],
+        "frequency": 1
+    },
+    {
+        "name": "j",
+        "label": ["consonant", "sonorant", "semivowel", "palatal"],
+        "frequency": 1
+    },
+    {
+        "name": "ʔ",
+        "label": ["consonant", "stop", "glottal", "dorsal"],
+        "frequency": 5
+    },
+    {
+        "name": "h",
+        "label": ["consonant", "fricative", "glottal", "dorsal"],
+        "frequency": 5
+    },
+    {
+        "name": "i",
+        "label": ["vowel", "high", "front"],
+        "frequency": 4
+    },
+    {
+        "name": "ɨ",
+        "label": ["vowel", "high", "mid"],
+        "frequency": 1
+    },
+    {
+        "name": "u",
+        "label": ["vowel", "high", "back"],
+        "frequency": 3
+    },
+    {
+        "name": "e",
+        "label": ["vowel", "low", "front"],
+        "frequency": 1
+    },
+    {
+        "name": "a",
+        "label": ["vowel", "low", "mid"],
+        "frequency": 4
+    },
+    {
+        "name": "o",
+        "label": ["vowel", "low", "back"],
+        "frequency": 2
+    }
+]

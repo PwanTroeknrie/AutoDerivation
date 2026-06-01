@@ -1,0 +1,85 @@
+[
+  {
+    "id": "s_after_stop_aspiration_neutralization",
+    "description": "送气塞音和不送气塞音在s后中和，sPh > sP",
+    "active": true,
+    "order": 1,
+    "direction": "L2R",
+    "input": "[ʰh]",
+    "output": "",
+    "context": {"left": "[s][P]", "right": ""}
+  },
+  {
+    "id": "st_metathesis",
+    "description": "在元音前st换位成ts",
+    "active": true,
+    "order": 2,
+    "direction": "L2R",
+    "input": "st",
+    "output": "ts",
+    "context": {"left": "", "right": "[V]"}
+  },
+  {
+    "id": "aspirated_stop_fricativization",
+    "description": "所有非元音前的送气塞音变成擦音",
+    "active": true,
+    "order": 3,
+    "direction": "L2R",
+    "input": "P",
+    "output": "[P | ]",
+    "context": {"left": "", "right": "[^V]"}
+  },
+  {
+    "id": "ejective_vowel_lowering",
+    "description": "周围有喷音的元音后低化",
+    "active": true,
+    "order": 4,
+    "direction": "L2R",
+    "input": "V",
+    "output": "V̞",
+    "context": {"left": "Pˀ", "right": ""}
+  },
+  {
+    "id": "laryngeal_deletion",
+    "description": "H只能出现在HV的条件下，其余将会被删除。",
+    "active": true,
+    "order": 5,
+    "direction": "L2R",
+    "input": "[ʔhˀʰ]",
+    "output": "",
+    "context": {"left": "", "right": "[^V]"}
+  },
+  {
+    "id": "final_sonorant_vocalization",
+    "description": "词尾流音变成元音u，CS# > Cu#。",
+    "active": true,
+    "order": 6,
+    "direction": "L2R",
+    "input": "S",
+    "output": "u",
+    "context": {"left": "C", "right": "#"}
+  },
+  {
+    "id": "r_assimilation",
+    "description": "r周围的同部位音同化强化",
+    "active": true,
+    "order": 7,
+    "direction": "L2R",
+    "input": "[ɹln]ɹ|ɹ[ɹln]",
+    "output": "r̄",
+    "context": {"left": "", "right": ""}
+  },
+  {
+    "id": "ccc_insert_y",
+    "description": "所有连续三个塞音中间会插入y，CCC > CCyC",
+    "active": true,
+    "order": 8,
+    "direction": "R2L",
+    "input": "",
+    "output": "y",
+    "context": {
+      "left": "CC",
+      "right": "C"
+    }
+  }
+]

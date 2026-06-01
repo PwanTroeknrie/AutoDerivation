@@ -1,0 +1,314 @@
+{
+  "verb_logic": {
+    "5-step": {
+      "aspect_ablaut": {
+        "PFV": {
+          "T": "l",
+          "K": "y",
+          "P": "w",
+          "Q": "o",
+          "ʔ": "a"
+        },
+        "IPFV": {
+          "T": "t",
+          "K": "k",
+          "P": "p",
+          "Q": "q",
+          "ʔ": ""
+        },
+        "INF": {
+          "T": "tʰ",
+          "K": "kʰ",
+          "P": "pʰ",
+          "Q": "qʰ",
+          "ʔ": "h"
+        }
+      }
+    },
+    "2-step": {
+      "aspect_ablaut": {
+        "PFV": {
+          "I": "ie",
+          "U": "uo"
+        },
+        "IPFV": {
+          "I": "yj",
+          "U": "ow"
+        },
+        "INF": {
+          "I": "i",
+          "U": "u"
+        }
+      }
+    }
+  },
+  "noun_logic": {
+    "D1": {
+      "ani": {
+        "abs": "e",
+        "con": "a"
+      },
+      "inan": {
+        "abs": "o",
+        "con": "a"
+      }
+    },
+    "D2": {
+      "p": {
+        "ani": {
+          "abs": "py",
+          "con": "p"
+        },
+        "inan": {
+          "abs": "pa",
+          "con": "p"
+        }
+      },
+      "t": {
+        "ani": {
+          "abs": "ty",
+          "con": "t"
+        },
+        "inan": {
+          "abs": "ta",
+          "con": "t"
+        }
+      },
+      "k": {
+        "ani": {
+          "abs": "ky",
+          "con": "k"
+        },
+        "inan": {
+          "abs": "ka",
+          "con": "k"
+        }
+      },
+      "q": {
+        "ani": {
+          "abs": "qy",
+          "con": "q"
+        },
+        "inan": {
+          "abs": "qa",
+          "con": "q"
+        }
+      },
+      "nt": {
+        "ani": {
+          "abs": "uty",
+          "con": "p"
+        }
+      }
+    },
+    "D3": {
+      "m": {
+        "ani": {
+          "abs": "um",
+          "con": "ym"
+        },
+        "inan": {
+          "abs": "oŋ",
+          "con": "aŋ"
+        }
+      },
+      "n": {
+        "ani": {
+          "abs": "in",
+          "con": "yn"
+        },
+        "inan": {
+          "abs": "en",
+          "con": "an"
+        }
+      },
+      "l": {
+        "ani": {
+          "abs": "il",
+          "con": "yl"
+        },
+        "inan": {
+          "abs": "el",
+          "con": "al"
+        }
+      },
+      "r": {
+        "ani": {
+          "abs": "er",
+          "con": "ar"
+        },
+        "inan": {
+          "abs": "or",
+          "con": "ar"
+        }
+      },
+      "j": {
+        "ani": {
+          "abs": "j",
+          "con": "j"
+        },
+        "inan": {
+          "abs": "j",
+          "con": "ja"
+        }
+      },
+      "w": {
+        "ani": {
+          "abs": "w",
+          "con": "w"
+        },
+        "inan": {
+          "abs": "w",
+          "con": "we"
+        }
+      }
+    },
+    "D4": {
+      "s": {
+        "iu": {
+          "abs": "is",
+          "con": "ys"
+        },
+        "eo": {
+          "abs": "es",
+          "con": "as"
+        }
+      },
+      "c": {
+        "iu": {
+          "abs": "ic",
+          "con": "yc"
+        },
+        "eo": {
+          "abs": "ec",
+          "con": "ac"
+        }
+      },
+      "f": {
+        "iu": {
+          "abs": "if",
+          "con": "yf"
+        },
+        "eo": {
+          "abs": "ef",
+          "con": "af"
+        }
+      }
+    }
+  },
+  "verbal_agreement": {
+    "personal": {
+      "1sg": {
+        "ACT": "pe",
+        "STA": "mi",
+        "ACT_NEG": "pa",
+        "STA_NEG": "muja"
+      },
+      "2sg": {
+        "ACT": "ne",
+        "STA": "ti",
+        "ACT_NEG": "na",
+        "STA_NEG": "tuja"
+      },
+      "1pl_excl": {
+        "ACT": "pepe",
+        "STA": "mim",
+        "ACT_NEG": "papa",
+        "STA_NEG": "mum"
+      },
+      "1pl_incl": {
+        "ACT": "pene",
+        "STA": "miti",
+        "ACT_NEG": "pana",
+        "STA_NEG": "mutuja"
+      },
+      "2pl": {
+        "ACT": "nene",
+        "STA": "titi",
+        "ACT_NEG": "nana",
+        "STA_NEG": "tutuja"
+      }
+    },
+    "humans": {
+      "honorific_max": {
+        "ACT": "marc",
+        "STA": "mos"
+      },
+      "honorific_high": {
+        "ACT": "rc",
+        "STA": "syn"
+      },
+      "honorific_plain": {
+        "ACT": "r",
+        "STA": "n"
+      },
+      "plain": {
+        "ACT": "ng",
+        "STA": "j"
+      },
+      "humilific_self": {
+        "ACT": "jm",
+        "STA": "wo"
+      },
+      "humilific_plain": {
+        "ACT": "m",
+        "STA": "w"
+      },
+      "humilific_low": {
+        "ACT": "masu",
+        "STA": "mosu"
+      }
+    },
+    "animacy": {
+      "animal": {
+        "ACT": "phuj",
+        "STA": "ph",
+        "ACT_NEG": "phuja",
+        "STA_NEG": "pha"
+      },
+      "plant": {
+        "ACT": "kuj",
+        "STA": "ku",
+        "ACT_NEG": "kuja",
+        "STA_NEG": "kuha"
+      },
+      "object_ani": {
+        "ACT": "huj",
+        "STA": "hu",
+        "ACT_NEG": "huja",
+        "STA_NEG": "huha"
+      },
+      "object_inan": {
+        "ACT": "",
+        "STA": "",
+        "ACT_NEG": "a",
+        "STA_NEG": "a"
+      },
+      "abstract": {
+        "ACT": "so",
+        "STA": "tso",
+        "ACT_NEG": "sa",
+        "STA_NEG": "tsa"
+      }
+    },
+    "infixes": {
+      "w": "u",
+      "n": "un",
+      "r": "ur"
+    },
+    "tense_mood": {
+      "F": {
+        "R": "the",
+        "IR": "phi",
+        "IMP": "ets",
+        "HORT": "en"
+      },
+      "NF": {
+        "R": "",
+        "IR": "khy",
+        "IMP": "aks",
+        "HORT": "aŋ"
+      }
+    }
+  }
+}
