@@ -5,7 +5,7 @@
 
 [deepseek]
 # Prefer DEEPSEEK_API_KEY in the environment. Keep this placeholder out of commits.
-api_key = "sk-xxx"
+api_key = "sk-470fbbc1e0bd4f18abcb1f18455b21be"
 base_url = "https://api.deepseek.com/v1"
 model = "deepseek-chat"
 timeout = 30

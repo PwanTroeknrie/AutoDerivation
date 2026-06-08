@@ -3,10 +3,8 @@ __pycache__/
 *.py[cod]
 node_modules/
 flask.*.log
-.env
-.env.*
-!.env.example
 backend/runtime_config.json
+backend/config.toml
 AGENT.md
 .idea/
 frontend/dist/

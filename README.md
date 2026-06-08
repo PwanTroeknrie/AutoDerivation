@@ -24,20 +24,20 @@ cd frontend
 npm.cmd run build
 ```
 
-构建结果会输出到 `frontend/static/`，由 Flask 直接托管。
+构建结果会输出到 `frontend/dist/`，由 Flask 直接托管。
 
-## 环境变量
+## 配置
 
-复制 `.env.example` 中的变量到本机环境。敏感信息不要写入 `backend/config.toml`。
+所有配置集中在 `backend/config.toml`（该文件包含 API key，不进版本控制）。结构如下：
 
-常用变量：
-
-- `DEEPSEEK_API_KEY`: DeepSeek API key
-- `AUTODERIVATION_AI_MODE`: `cloud`、`local` 或 `off`
-- `AUTODERIVATION_DB_PATH`: ChromaDB 路径
-- `AUTODERIVATION_MODEL_PATH`: sentence-transformers 本地模型路径
-- `OLLAMA_BASE_URL`: 本地 Ollama chat endpoint
-- `OLLAMA_MODEL`: Ollama 模型名
+```toml
+[deepseek]     # DeepSeek API 配置（api_key, base_url, model, timeout）
+[ollama]       # Ollama 本地模型配置（base_url, model, timeout）
+[paths]        # 模型路径、缓存路径、向量库路径
+[database]     # ChromaDB 集合名
+[thresholds]   # 词源决策分数阈值
+[ai]           # AI 模式: "cloud" 或 "local"
+```
 
 ## Etymologist API
 

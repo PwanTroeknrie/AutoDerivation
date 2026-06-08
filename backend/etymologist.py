@@ -16,11 +16,6 @@ class EtymologyError(RuntimeError):
   pass
 
 
-def _env(name: str, default: Optional[Any] = None) -> Optional[str]:
-  value = os.getenv(name)
-  return value if value not in (None, "") else default
-
-
 def _abs_path(path: str) -> str:
   if os.path.isabs(path):
     return path
@@ -40,26 +35,26 @@ def _load_config() -> Dict[str, Any]:
   database = cfg.get("database", {})
 
   return {
-    "db_path": _abs_path(_env("AUTODERIVATION_DB_PATH", paths.get("db_path", "conlang_db"))),
-    "cache_path": _abs_path(_env("AUTODERIVATION_CACHE_PATH", paths.get("cache_path", "data/cache.json"))),
-    "model_path": _env("AUTODERIVATION_MODEL_PATH", paths.get("model_path", "")),
-    "collection_name": _env("AUTODERIVATION_COLLECTION", database.get("collection_name", "lexicon")),
-    "ai_mode": (_env("AUTODERIVATION_AI_MODE", ai.get("mode", "local")) or "local").lower(),
+    "db_path": _abs_path(paths.get("db_path", "conlang_db")),
+    "cache_path": _abs_path(paths.get("cache_path", "data/cache.json")),
+    "model_path": paths.get("model_path", ""),
+    "collection_name": database.get("collection_name", "lexicon"),
+    "ai_mode": (ai.get("mode", "local") or "local").lower(),
     "deepseek": {
-      "api_key": _env("DEEPSEEK_API_KEY", deepseek.get("api_key", "")),
-      "base_url": _env("DEEPSEEK_BASE_URL", deepseek.get("base_url", "https://api.deepseek.com/v1")),
-      "model": _env("DEEPSEEK_MODEL", deepseek.get("model", "deepseek-chat")),
-      "timeout": int(_env("DEEPSEEK_TIMEOUT", str(deepseek.get("timeout", 30))) or 30),
+      "api_key": deepseek.get("api_key", ""),
+      "base_url": deepseek.get("base_url", "https://api.deepseek.com/v1"),
+      "model": deepseek.get("model", "deepseek-chat"),
+      "timeout": int(deepseek.get("timeout", 30) or 30),
     },
     "ollama": {
-      "base_url": _env("OLLAMA_BASE_URL", ollama.get("base_url", "http://localhost:11434/api/chat")),
-      "model": _env("OLLAMA_MODEL", ollama.get("model", "sorc/qwen3.5-instruct-uncensored:2b")),
-      "timeout": int(_env("OLLAMA_TIMEOUT", str(ollama.get("timeout", 120))) or 120),
+      "base_url": ollama.get("base_url", "http://localhost:11434/api/chat"),
+      "model": ollama.get("model", "sorc/qwen3.5-instruct-uncensored:2b"),
+      "timeout": int(ollama.get("timeout", 120) or 120),
     },
     "thresholds": {
-      "existed": float(_env("ETYMOLOGY_EXISTED_THRESHOLD", str(thresholds.get("existed", 90))) or 90),
-      "derived": float(_env("ETYMOLOGY_DERIVED_THRESHOLD", str(thresholds.get("derived", 60))) or 60),
-      "generate": float(_env("ETYMOLOGY_GENERATE_THRESHOLD", str(thresholds.get("generate", 30))) or 30),
+      "existed": float(thresholds.get("existed", 90) or 90),
+      "derived": float(thresholds.get("derived", 60) or 60),
+      "generate": float(thresholds.get("generate", 30) or 30),
     },
   }
 
@@ -534,7 +529,7 @@ def diagnose_environment() -> Dict[str, Any]:
     "model_exists": bool(CONFIG["model_path"] and os.path.exists(CONFIG["model_path"])),
     "ai_mode": CONFIG["ai_mode"],
     "deepseek_key_configured": bool(CONFIG["deepseek"]["api_key"] and not str(CONFIG["deepseek"]["api_key"]).startswith("sk-REPLACE")),
-    "recommended_command": r"venv\python.exe backend\app.py",
+    "recommended_command": r"backend\venv\python.exe backend\app.py",
   }
   dependencies = {}
   for name in ["chromadb", "sentence_transformers", "rapidfuzz", "openai", "requests"]:
