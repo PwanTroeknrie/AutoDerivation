@@ -1,5 +1,16 @@
-venv/
+backend/venv/
 __pycache__/
 *.py[cod]
 node_modules/
 flask.*.log
+.env
+.env.*
+!.env.example
+backend/runtime_config.json
+AGENT.md
+.idea/
+frontend/dist/
+frontend/static-test/
+*.tsbuildinfo
+frontend/static/
+backend/conlang_db/

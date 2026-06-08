@@ -4,9 +4,11 @@
 # ============================================================
 
 [deepseek]
-api_key = "sk-470fbbc1e0bd4f18abcb1f18455b21be"
+# Prefer DEEPSEEK_API_KEY in the environment. Keep this placeholder out of commits.
+api_key = "sk-xxx"
 base_url = "https://api.deepseek.com/v1"
 model = "deepseek-chat"
+timeout = 30
 
 [ollama]
 base_url = "http://localhost:11434/api/chat"
@@ -17,7 +19,7 @@ timeout = 120
 # 本地 sentence-transformers 模型路径
 model_path = "C:\\Users\\panjo\\.cache\\chroma\\onnx_models\\paraphrase-multilingual-MiniLM-L12-v2\\onnx"
 # 翻译对缓存文件路径
-cache_path = "D:\\Code\\ExpCodes\\AutoDerivation\\cache.json"
+cache_path = "D:\\Code\\ExpCodes\\AutoDerivation\\backend\\data\\cache.json"
 # ChromaDB 向量库持久化路径
 db_path = "./conlang_db"
 
@@ -32,4 +34,4 @@ generate = 30
 
 [ai]
 # "cloud" (DeepSeek) 或 "local" (Ollama)
-mode = "local"
+mode = "cloud"

@@ -5,7 +5,10 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "lib": ["ES2022", "DOM"],
-    "outDir": "static"
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "esModuleInterop": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
